@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Asemam | DevOps Services for Startups & Medium Businesses</title>
+    <meta name="description" content="Asemam specializes in DevOps services for startups and medium-sized businesses, offering CI/CD pipelines, cloud migration, and Kubernetes orchestration.">
+    <meta name="keywords" content="DevOps, CI/CD, Kubernetes, Cloud Migration, SaaS, Fintech, E-commerce">
+    <meta name="author" content="Asemam">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css">
+    <style>
+        /* Sticky Navbar */
+        header {
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            background-color: #343a40;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Smooth scrolling */
+        html {
+            scroll-behavior: smooth;
+        }
+
+        /* Active section highlighting */
+        .nav-link.active {
+            font-weight: bold;
+            color: #007bff !important;
+        }
+
+        /* Hero section background placeholder */
+        .hero {
+            background-color: #d3d3d3;
+            height: 500px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        /* Subservices styling */
+        .subservices {
+            display: none;
+            margin-top: 10px;
+        }
+
+        .subservices.open {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <header class="bg-dark text-white p-3">
+        <nav class="container d-flex justify-content-between">
+            <h1>Asemam</h1>
+            <ul class="nav">
+                <li class="nav-item"><a href="#hero" class="nav-link text-white">Home</a></li>
+                <li class="nav-item"><a href="#services" class="nav-link text-white">Services</a></li>
+                <li class="nav-item"><a href="#testimonials" class="nav-link text-white">Testimonials</a></li>
+                <li class="nav-item"><a href="#case-studies" class="nav-link text-white">Case Studies</a></li>
+                <li class="nav-item"><a href="#pricing" class="nav-link text-white">Pricing</a></li>
+                <li class="nav-item"><a href="#about" class="nav-link text-white">About Us</a></li>
+                <li class="nav-item"><a href="#contact" class="nav-link text-white">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="hero" class="hero text-center py-5" data-aos="fade-in">
+        <div class="container">
+            <h2 class="display-4">Welcome to Asemam</h2>
+            <p class="lead">DevOps solutions for startups and medium businesses in fintech, e-commerce, and SaaS.</p>
+            <p class="lead">Save 10% to 50% on your DevOps and cloud costs with Asemam's optimization services.</p>
+            <a href="#services" class="btn btn-primary btn-lg mt-3">Explore Our Services</a>
+            <a href="#contact" class="btn btn-outline-secondary btn-lg mt-3">Schedule a Free Consultation</a>
+        </div>
+    </section>
+
+    <section id="services" class="py-5" data-aos="fade-up">
+        <div class="container text-center">
+            <h2 class="mb-4">Our Services</h2>
+            <div class="row">
+                <!-- CI/CD Pipeline Setup -->
+                <div class="col-md-6 mb-4">
+                    <div class="card shadow-sm">
+                        <div class="card-body">
+                            <h5 class="card-title">CI/CD Pipeline Setup</h5>
+                            <p class="card-text">Streamline your development process with continuous integration and delivery.</p>
+                            <button class="btn btn-secondary" onclick="toggleSubservices('cicd')">View Subservices</button>
+                            <ul id="cicd" class="subservices list-group mt-3">
+                                <li class="list-group-item">Jenkins Pipeline Setup</li>
+                                <li class="list-group-item">GitLab CI/CD Integration</li>
+                                <li class="list-group-item">Automated Testing Frameworks</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!-- Cost Optimization Service -->
+                <div class="col-md-6 mb-4">
+                    <div class="card shadow-sm">
+                        <div class="card-body">
+                            <h5 class="card-title">Cost Optimization (Save 10% - 50%)</h5>
+                            <p class="card-text">We help companies reduce DevOps and cloud costs by 10% to 50% depending on their environment and usage, while maintaining high performance and availability.</p>
+                            <button class="btn btn-secondary" onclick="toggleSubservices('costopt')">View Subservices</button>
+                            <ul id="costopt" class="subservices list-group mt-3">
+                                <li class="list-group-item">Cloud cost assessment & rightsizing (up to 50% reduction)</li>
+                                <li class="list-group-item">Pipeline & automation optimization</li>
+                                <li class="list-group-item">Serverless & autoscaling implementation</li>
+                                <li class="list-group-item">Pay-as-you-go strategy consultation</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Infrastructure as Code -->
+                <div class="col-md-6 mb-4">
+                    <div class="card shadow-sm">
+                        <div class="card-body">
+                            <h5 class="card-title">Infrastructure as Code (IaC) Implementation</h5>
+                            <p class="card-text">Automate your infrastructure setup with tools like Terraform and Ansible.</p>
+                            <button class="btn btn-secondary" onclick="toggleSubservices('iac')">View Subservices</button>
+                            <ul id="iac" class="subservices list-group mt-3">
+                                <li class="list-group-item">Terraform Modules</li>
+                                <li class="list-group-item">Ansible Playbooks</li>
+                                <li class="list-group-item">Infrastructure Automation</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!-- Cloud Migration and Optimization -->
+                <div class="col-md-6 mb-4">
+                    <div class="card shadow-sm">
+                        <div class="card-body">
+                            <h5 class="card-title">Cloud Migration and Optimization</h5>
+                            <p class="card-text">Migrate and optimize your infrastructure on AWS, Azure, or GCP.</p>
+                            <button class="btn btn-secondary" onclick="toggleSubservices('cloud')">View Subservices</button>
+                            <ul id="cloud" class="subservices list-group mt-3">
+                                <li class="list-group-item">AWS Migration</li>
+                                <li class="list-group-item">Azure Migration</li>
+                                <li class="list-group-item">Hybrid Cloud Solutions</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!-- Kubernetes and Container Orchestration -->
+                <div class="col-md-6 mb-4">
+                    <div class="card shadow-sm">
+                        <div class="card-body">
+                            <h5 class="card-title">Kubernetes and Container Orchestration</h5>
+                            <p class="card-text">Deploy and manage containerized applications efficiently.</p>
+                            <button class="btn btn-secondary" onclick="toggleSubservices('kubernetes')">View Subservices</button>
+                            <ul id="kubernetes" class="subservices list-group mt-3">
+                                <li class="list-group-item">Cluster Management</li>
+                                <li class="list-group-item">Helm Charts Deployment</li>
+                                <li class="list-group-item">Autoscaling Configuration</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!-- Monitoring and Logging -->
+                <div class="col-md-6 mb-4">
+                    <div class="card shadow-sm">
+                        <div class="card-body">
+                            <h5 class="card-title">Monitoring and Logging Solutions</h5>
+                            <p class="card-text">Implement robust monitoring with tools like Prometheus and Grafana.</p>
+                            <button class="btn btn-secondary" onclick="toggleSubservices('monitoring')">View Subservices</button>
+                            <ul id="monitoring" class="subservices list-group mt-3">
+                                <li class="list-group-item">Prometheus Setup</li>
+                                <li class="list-group-item">Grafana Dashboards</li>
+                                <li class="list-group-item">Alerting Mechanisms</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!-- DevSecOps -->
+                <div class="col-md-6 mb-4">
+                    <div class="card shadow-sm">
+                        <div class="card-body">
+                            <h5 class="card-title">DevSecOps (Security in DevOps)</h5>
+                            <p class="card-text">Integrate security practices into your DevOps workflows.</p>
+                            <button class="btn btn-secondary" onclick="toggleSubservices('devsecops')">View Subservices</button>
+                            <ul id="devsecops" class="subservices list-group mt-3">
+                                <li class="list-group-item">Security Audits</li>
+                                <li class="list-group-item">Vulnerability Scanning</li>
+                                <li class="list-group-item">Compliance Reporting</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!-- Automation and Scripting -->
+                <div class="col-md-6 mb-4">
+                    <div class="card shadow-sm">
+                        <div class="card-body">
+                            <h5 class="card-title">Automation and Scripting</h5>
+                            <p class="card-text">Automate repetitive tasks to save time and reduce errors.</p>
+                            <button class="btn btn-secondary" onclick="toggleSubservices('automation')">View Subservices</button>
+                            <ul id="automation" class="subservices list-group mt-3">
+                                <li class="list-group-item">Custom Scripts</li>
+                                <li class="list-group-item">Automation Frameworks</li>
+                                <li class="list-group-item">CI/CD Workflow Automation</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!-- Consulting and Training -->
+                <div class="col-md-6 mb-4">
+                    <div class="card shadow-sm">
+                        <div class="card-body">
+                            <h5 class="card-title">Consulting and Training</h5>
+                            <p class="card-text">Empower your team with expert guidance and training.</p>
+                            <button class="btn btn-secondary" onclick="toggleSubservices('consulting')">View Subservices</button>
+                            <ul id="consulting" class="subservices list-group mt-3">
+                                <li class="list-group-item">DevOps Best Practices</li>
+                                <li class="list-group-item">Custom Training Sessions</li>
+                                <li class="list-group-item">Team Mentorship</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="testimonials" class="py-5 bg-light" data-aos="fade-up">
+        <div class="container text-center">
+            <h2 class="mb-4">What Our Clients Say</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <blockquote class="blockquote">
+                        <p>"Asemam transformed our deployment process. Time-to-market improved drastically!"</p>
+                        <footer class="blockquote-footer">Jane Doe, CTO at FinTechX</footer>
+                    </blockquote>
+                </div>
+                <div class="col-md-4">
+                    <blockquote class="blockquote">
+                        <p>"Their Kubernetes expertise helped us scale efficiently during peak traffic."</p>
+                        <footer class="blockquote-footer">John Smith, CEO of EcomPro</footer>
+                    </blockquote>
+                </div>
+                <div class="col-md-4">
+                    <blockquote class="blockquote">
+                        <p>"Thanks to Asemam, our cloud costs dropped by 30% without compromising performance."</p>
+                        <footer class="blockquote-footer">Emily Davis, VP Engineering at SaaSify</footer>
+                    </blockquote>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="case-studies" class="py-5" data-aos="fade-up">
+        <div class="container text-center">
+            <h2 class="mb-4">Case Studies</h2>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="card shadow-sm">
+                        <div class="card-body">
+                            <h5 class="card-title">FinTechX Deployment</h5>
+                            <p class="card-text">Reduced deployment time by 50% with a robust CI/CD pipeline.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="card shadow-sm">
+                        <div class="card-body">
+                            <h5 class="card-title">EcomPro Scalability</h5>
+                            <p class="card-text">Scaled seamlessly to handle 3x traffic using Kubernetes.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="pricing" class="py-5" data-aos="fade-up">
+        <div class="container text-center">
+            <h2 class="mb-4">Custom Pricing with Cost Optimization</h2>
+            <p class="lead">Our clients typically save 10% to 50% on their DevOps and cloud expenses, depending on their environment and usage.</p>
+            
+            <div class="row justify-content-center">
+                <div class="col-md-6 text-start">
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">✔ Cloud and infrastructure cost optimization</li>
+                        <li class="list-group-item">✔ Flexible pricing based on your actual needs</li>
+                        <li class="list-group-item">✔ No hidden fees, only pay for what you use</li>
+                        <li class="list-group-item">✔ Free initial cost assessment and recommendation</li>
+                    </ul>
+                </div>
+            </div>
+    
+            <a href="#contact" class="btn btn-primary btn-lg mt-4">Request a Free Cost Optimization Assessment</a>
+        </div>
+    </section>
+    
+    
+
+    <section id="about" class="py-5" data-aos="fade-right">
+        <div class="container text-center">
+            <h2 class="mb-4">About Asemam</h2>
+            <p class="lead">We help startups and medium businesses achieve operational excellence through cutting-edge DevOps practices.</p>
+        </div>
+    </section>
+
+    <section id="contact" class="py-5" data-aos="fade-up">
+        <div class="container">
+            <h2 class="text-center mb-4">Contact Us</h2>
+            <form action="https://formspree.io/f/xwppynzq" method="POST" class="row g-3">
+                <div class="col-md-6">
+                    <label for="name" class="form-label">Your Name</label>
+                    <input type="text" id="name" name="name" class="form-control" required>
+                </div>
+                <div class="col-md-6">
+                    <label for="email" class="form-label">Your Email</label>
+                    <input type="email" id="email" name="email" class="form-control" required>
+                </div>
+                <div class="col-12">
+                    <label for="message" class="form-label">Your Message</label>
+                    <textarea id="message" name="message" class="form-control" rows="5" required></textarea>
+                </div>
+                <div class="col-12 text-center">
+                    <button type="submit" class="btn btn-primary">Send Message</button>
+                </div>
+            </form>
+            <div class="text-center mt-4">
+                <p>Or reach us directly:</p>
+                <p><strong>Email:</strong> <a href="mailto:contact@asemam.com">contact@asemam.com</a></p>
+                <p><strong>Phone:</strong> <a href="tel:+1234567890">+1 234 567 890</a></p>
+                <p><strong>WhatsApp:</strong> <a href="https://wa.me/1234567890" target="_blank">Chat with us</a></p>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-dark text-white text-center p-3 mt-5">
+        &copy; 2025 Asemam. All rights reserved.
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script>
+      AOS.init();
+
+      // Toggle subservices display
+      function toggleSubservices(serviceId) {
+          const subservices = document.getElementById(serviceId);
+          subservices.classList.toggle('open');
+      }
+    </script>
+</body>
+</html>
